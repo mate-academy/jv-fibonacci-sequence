@@ -6,6 +6,18 @@ public class FibonacciSequence {
      * из `n`чисел  последовательности Фибоначчи.
      */
     public int[] getFibonacciSequence(int n) {
-        return null;
+        int[] sequence = new int[n];
+        if (n == 1) {
+            sequence[0] = 0;
+            return sequence;
+        }
+        if (n != 0) {
+            sequence[0] = 0;
+            sequence[1] = 1;
+            for (int i = 0; i < n - 2; i++) {
+                sequence[i + 2] = sequence[i] + sequence[i + 1];
+            }
+        }
+        return sequence;
     }
 }
