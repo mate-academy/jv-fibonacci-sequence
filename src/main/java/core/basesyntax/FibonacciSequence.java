@@ -15,6 +15,6 @@ public class FibonacciSequence {
 
     public int getNumber(int number) {
         return (number > 1)
-        ? getNumber(number - 1) + getNumber(number - 2) : number;
+                ? getNumber(number - 1) + getNumber(number - 2) : number;
     }
 }
