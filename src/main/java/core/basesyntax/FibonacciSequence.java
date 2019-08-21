@@ -8,14 +8,14 @@ public class FibonacciSequence {
     public static int[] getFibonacciSequence(int n) {
         int[] f = new int[n];
 
-        for (int i = 0; i < f.length; ++i) {
-            if (i == 0) {
-                f[i] = 0;
-            } else if (i == 1) {
-                f[i] = 1;
+        for (int k = 0; k < f.length; ++k) {
+            if (k == 0) {
+                f[k] = 0;
+            } else if (k == 1) {
+                f[k] = 1;
             } else {
 
-                f[i] = f[i - 1] + f[i - 2];
+                f[k] = f[k - 1] + f[k - 2];
             }
         }
         return f;
