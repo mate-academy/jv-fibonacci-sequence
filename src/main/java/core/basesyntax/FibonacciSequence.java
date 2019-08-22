@@ -9,6 +9,9 @@ public class FibonacciSequence {
         if (n <= 0) {
             return new int[]{};
         }
+        if (n == 1) {
+            return new int[]{0};
+        }
         if (n == 2) {
             return new int[]{0, 1};
         }
