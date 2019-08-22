@@ -16,12 +16,12 @@ public class FibonacciSequence {
             return new int[] { 0, 1 };
         }
 
-        int[] ar = new int[n];
-        ar[0] = 0;
-        ar[1] = 1;
+        int[] intArrayFibonacci = new int[n];
+        intArrayFibonacci[0] = 0;
+        intArrayFibonacci[1] = 1;
         for (int i = 2; i < n; i++) {
-            ar[i] = ar[i - 2] + ar[i - 1];
+            intArrayFibonacci[i] = intArrayFibonacci[i - 2] + intArrayFibonacci[i - 1];
         }
-        return ar;
+        return intArrayFibonacci;
     }
 }
