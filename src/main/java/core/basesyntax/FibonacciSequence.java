@@ -10,12 +10,17 @@ public class FibonacciSequence {
         int nextNum = 1;
         if (n == 1) {
             return new int[] {0};
-        } else {
-            for (int i = 1; i < n; i++) {
-                nums[i] = nextNum;
-                nextNum += nums[i - 1];
-            }
-            return nums;
         }
+        if (n <= 0) {
+            return new int[] {};
+        }
+        if (n == 2) {
+            return new int[] {0,1};
+        }
+        for (int i = 1; i < n; i++) {
+            nums[i] = nextNum;
+            nextNum += nums[i - 1];
+        }
+        return nums;
     }
 }
