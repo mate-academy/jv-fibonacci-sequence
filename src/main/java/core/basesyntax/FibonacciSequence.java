@@ -8,7 +8,7 @@ public class FibonacciSequence {
     public static int[] getFibonacciSequence(int n) {
         int[] arrayOfNumbersFibonacci = new int[n];
         if (n == 1) {
-            arrayOfNumbersFibonacci[0] = 0;
+            return arrayOfNumbersFibonacci;
         }
         if (n == 2) {
             arrayOfNumbersFibonacci[0] = 0;
