@@ -9,14 +9,13 @@ public class FibonacciSequence {
         int[] nums = new int[n];
         int nextNum = 1;
         if (n == 1) {
-            nums[0] = 0;
-            return nums;
+            return new int[] {0};
         } else {
             for (int i = 1; i < n; i++) {
                 nums[i] = nextNum;
                 nextNum += nums[i - 1];
             }
+            return nums;
         }
-        return nums;
     }
 }
