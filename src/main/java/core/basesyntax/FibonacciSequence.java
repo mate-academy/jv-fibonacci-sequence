@@ -9,8 +9,7 @@ public class FibonacciSequence {
         if (n == 0) {
             return new int[0];
         } else  if (n == 1) {
-            int[] arrayFib = {0};
-            return arrayFib;
+            return new int[] {0};
         } else {
             int[] arrayFib = new int[n];
             arrayFib[0] = 0;
