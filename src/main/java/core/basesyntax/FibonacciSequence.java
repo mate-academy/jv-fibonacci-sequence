@@ -17,7 +17,7 @@ public class FibonacciSequence {
         fib[1] = 1;
 
         for (int i = 2; i < n; i++) {
-            fib[i] = fib[i-2] + fib[i-2];
+            fib[i] = fib[i - 2] + fib[i - 2];
         }
         return fib;
     }
