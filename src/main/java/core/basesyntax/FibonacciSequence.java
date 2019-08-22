@@ -6,7 +6,6 @@ public class FibonacciSequence {
      * из `n`чисел  последовательности Фибоначчи.
      */
     public int[] getFibonacciSequence(int n) {
-        //simplify to return new int[] {0}....
         if (n == 1) {
             return new int[]{0};
         }
