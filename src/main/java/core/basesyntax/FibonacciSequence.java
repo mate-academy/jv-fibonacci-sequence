@@ -7,7 +7,6 @@ public class FibonacciSequence {
      */
     public static int[] getFibonacciSequence(int n) {
         int[] fibonacciNumber = new int[n];
-
         for (int k = 0; k < fibonacciNumber.length; ++k) {
             if (k == 0) {
                 fibonacciNumber[k] = 0;
