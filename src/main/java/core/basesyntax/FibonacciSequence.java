@@ -11,8 +11,8 @@ public class FibonacciSequence {
             return arrayOfNumbersFibonacci;
         }
         if (n == 2) {
-            arrayOfNumbersFibonacci[0] = 0;
             arrayOfNumbersFibonacci[1] = 1;
+            return arrayOfNumbersFibonacci;
         }
         if (n >= 3) {
             int[] tempArray = getFibonacciSequence(n - 1);
