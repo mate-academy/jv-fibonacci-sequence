@@ -5,10 +5,6 @@ public class FibonacciSequence {
      * Реализуйте метод `getFibonacciSequence(int n)` который вовзращает массив состоящий
      * из `n`чисел  последовательности Фибоначчи.
      */
-    public static void main(String[] args) {
-
-    }
-
     public int[] getFibonacciSequence(int n) {
         if (n == 0) {
             return new int[0];
