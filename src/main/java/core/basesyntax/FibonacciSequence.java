@@ -14,7 +14,6 @@ public class FibonacciSequence {
             fibonacci[i] = a;
             a = b;
             b = fibonacci[i] + b;
-
         }
 
         return fibonacci;
