@@ -13,7 +13,6 @@ public class FibonacciSequence {
             } else if (k == 1) {
                 fibonacciNumber[k] = 1;
             } else {
-
                 fibonacciNumber[k] = fibonacciNumber[k - 1] + fibonacciNumber[k - 2];
             }
         }
