@@ -10,6 +10,16 @@ public class FibonacciSequence {
      * Результат: 21</p>
      */
     public int getFibonacciNumber(int index) {
-        return 0;
+        if (index == 0) {
+            return 0;
+        }
+        if (index == 1 || index == 2) {
+            return 1;
+        }
+        return getFibonacciNumber(--index) + getFibonacciNumber(--index);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new FibonacciSequence().getFibonacciNumber(8));
     }
 }
