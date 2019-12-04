@@ -12,15 +12,8 @@ public class FibonacciSequence {
     public int getFibonacciNumber(int index) {
         if (index < 2) {
             return index;
+        } else {
+            return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
         }
-        int a = 0;
-        int b = 1;
-        int result = 0;
-        for (int i = 2; i <= index; i++) {
-            result = a + b;
-            a = b;
-            b = result;
-        }
-        return result;
     }
 }
