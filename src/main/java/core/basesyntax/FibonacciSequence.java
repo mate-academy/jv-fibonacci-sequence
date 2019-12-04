@@ -10,20 +10,14 @@ public class FibonacciSequence {
      * Результат: 21</p>
      */
     public int getFibonacciNumber(int index) {
-        int n0 = 1;
-        int n1 = 1;
-        int n = 0;
-        if (index > 2) {
-            for (int i = 0; i < index - 2; i++) {
-                n = n0 + n1;
-                n0 = n1;
-                n1 = n;
-            }
-            return n;
-        } else if (index == 0) {
+        if (index == 0){
             return 0;
-        } else {
+        }
+        if (index == 1){
             return 1;
+        }
+        else{
+            return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
         }
     }
 }
