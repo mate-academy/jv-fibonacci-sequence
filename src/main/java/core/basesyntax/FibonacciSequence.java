@@ -12,18 +12,9 @@ public class FibonacciSequence {
     public int getFibonacciNumber(int index) {
         if (index == 0) {
             return 0;
-        } else if (index == 1) {
+        } else if (index <= 1) {
             return 1;
-        } else {
-            int first = 0;
-            int second = 1;
-
-            for (int i = 2; i <= index; i++) {
-                int fibonachi = first + second;
-                first = second;
-                second = fibonachi;
-            }
-            return second;
         }
+        return getFibonacciNumber(index - 2) + getFibonacciNumber(index - 1);
     }
 }
