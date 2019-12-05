@@ -13,13 +13,9 @@ public class FibonacciSequence {
         if (index == 0) {
             return 0;
         }
-        if (index == 1 || index == 2) {
+        if (index == 1) {
             return 1;
         }
         return getFibonacciNumber(--index) + getFibonacciNumber(--index);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new FibonacciSequence().getFibonacciNumber(8));
     }
 }
