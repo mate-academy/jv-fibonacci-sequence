@@ -11,7 +11,7 @@ public class FibonacciSequence {
      */
     public int getFibonacciNumber(int index) {
 
-        if (index < 2) {
+        if (index >= 0 && index < 2) {
             return index;
         }
 
