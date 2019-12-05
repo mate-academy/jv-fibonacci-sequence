@@ -13,7 +13,7 @@ public class FibonacciSequence {
         if (index == 0) {
             return 0;
         }
-        if (index == 1 || index == 2) {
+        if (index <= 2) {
             return 1;
         }
         return getFibonacciNumber(index - 2) + getFibonacciNumber(index - 1);
