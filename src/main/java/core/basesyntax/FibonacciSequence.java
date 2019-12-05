@@ -12,9 +12,12 @@ public class FibonacciSequence {
     public int getFibonacciNumber(int index) {
         if (index == 0) {
             return 0;
-        } else if (index <= 1) {
+        }
+
+        if (index <= 1) {
             return 1;
         }
+
         return getFibonacciNumber(index - 2) + getFibonacciNumber(index - 1);
     }
 }
