@@ -11,7 +11,7 @@ public class FibonacciSequence {
      */
 
     public static void main(String[] args) {
-        System.out.println(getFibonacciNumber(8));
+        System.out.println(getFibonacciNumber(7));
     }
 
     public static int getFibonacciNumber(int index) {
@@ -21,6 +21,6 @@ public class FibonacciSequence {
         if (index < 2) {
             return 1;
         }
-        return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
+        return getFibonacciNumber(--index) + getFibonacciNumber(index - 1);
     }
 }
