@@ -18,6 +18,5 @@ public class FibonacciSequence {
             return 1;
         }
         return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
-
     }
 }
