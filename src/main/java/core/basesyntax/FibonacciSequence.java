@@ -6,10 +6,16 @@ public class FibonacciSequence {
      * стоит на `n` позиции в последовательности Фибоначчи (начало нумерации с нуля).
      * Используйте рекурсию.</p>
      *
-     * <p>Пример: n = 8
+     * <p>Пример: n = 8       1 1 2 3 5 8 13 21
      * Результат: 21</p>
      */
     public int getFibonacciNumber(int index) {
-        return 0;
+        if (index == 0) {
+            return 0;
+        }
+        if (index == 1) {
+            return 1;
+        }
+        return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
     }
 }
