@@ -2,14 +2,10 @@ package core.basesyntax;
 
 public class FibonacciSequence {
     /**
-     * <p>Реализуйте метод `getFibonacciNumber(int n)` который возвращает число Фибоначи которое
-     * стоит на `n` позиции в последовательности Фибоначчи (начало нумерации с нуля).
-     * Используйте рекурсию.</p>
-     *
-     * <p>Пример: n = 8
-     * Результат: 21</p>
+     * 0 1 1 2 3 5 8 index = n[1] + n[0]
      */
     public int getFibonacciNumber(int index) {
-        return 0;
+        return (index < 2) ? index : getFibonacciNumber(index - 1)
+                + getFibonacciNumber(index - 2);
     }
 }
