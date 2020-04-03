@@ -10,6 +10,15 @@ public class FibonacciSequence {
      * Результат: 21</p>
      */
     public int getFibonacciNumber(int index) {
-        return 0;
+        int counterIndex = 0;
+        return computeNextNumber(0, 1, counterIndex, index);
+    }
+
+    private int computeNextNumber(int lastNumber, int thisNumber, int counterIndex, int index) {
+        if (counterIndex == index) {
+            return lastNumber;
+        }
+        return computeNextNumber(thisNumber, lastNumber + thisNumber,
+                ++counterIndex, index);
     }
 }
