@@ -9,7 +9,14 @@ public class FibonacciSequence {
      * <p>Пример: n = 8
      * Результат: 21</p>
      */
-    public int getFibonacciNumber(int index) {
-        return 0;
+    public static int getFibonacciNumber(int index) {
+        if (index == 0) {
+            return 0;
+        }
+        if (index < 3) {
+            return 1;
+        }
+        return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
     }
 }
+
