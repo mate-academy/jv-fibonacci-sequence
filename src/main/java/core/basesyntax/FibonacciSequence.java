@@ -9,16 +9,15 @@ public class FibonacciSequence {
      * <p>Пример: n = 8
      * Результат: 21</p>
      */
-    public int getFibonacciNumber(int index) {
-        int counterIndex = 0;
-        return computeNextNumber(0, 1, counterIndex, index);
-    }
 
-    private int computeNextNumber(int lastNumber, int thisNumber, int counterIndex, int index) {
-        if (counterIndex == index) {
-            return lastNumber;
+    public int getFibonacciNumber(int index) {
+        if (index == 0) {
+            return 0;
         }
-        return computeNextNumber(thisNumber, lastNumber + thisNumber,
-                ++counterIndex, index);
+        if (index == 1) {
+            return 1;
+        } else {
+            return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
+        }
     }
 }
