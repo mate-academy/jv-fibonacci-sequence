@@ -10,13 +10,7 @@ public class FibonacciSequence {
      * Результат: 21</p>
      */
     public int getFibonacciNumber(int index) {
-        switch (index) {
-            case 0:
-                return 0;
-            case 1:
-                return 1;
-            default:
-                return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
-        }
+        if (index <= 1) return index;
+        return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
     }
 }
