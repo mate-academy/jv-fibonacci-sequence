@@ -10,9 +10,9 @@ public class FibonacciSequence {
      * Результат: 21</p>
      */
     public int getFibonacciNumber(int index) {
-        return index <= 1 ? (Math.max(index, 0)) :
-                (getFibonacciNumber(index - 1)
-                        + getFibonacciNumber(index - 2));
+        return index <= 1 ? index :
+                getFibonacciNumber(index - 1)
+                        + getFibonacciNumber(index - 2);
 
     }
 }
