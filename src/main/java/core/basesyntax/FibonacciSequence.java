@@ -16,7 +16,6 @@ public class FibonacciSequence {
         if (index == 1) {
             return 1;
         }
-        int sum = getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
-        return sum;
+        return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
     }
 }
