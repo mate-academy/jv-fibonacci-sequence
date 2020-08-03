@@ -11,14 +11,8 @@ public class FibonacciSequence {
      */
     public int getFibonacciNumber(int index) {
         int result = 0;
-        if (index <= 0) {
-            return 0;
-        }
-        if (index == 1) {
-            result = result + 1;
-            return result;
-        }
-        result = getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
-        return result;
+        return index > 1 ? getFibonacciNumber(index - 1)
+                + getFibonacciNumber(index - 2)
+                : index == 1 ? 1 : 0;
     }
 }
