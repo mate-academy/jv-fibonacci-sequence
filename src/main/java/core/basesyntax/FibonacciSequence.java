@@ -12,25 +12,21 @@ public class FibonacciSequence {
      * <p>Пример: n = 8
      * Результат: 21</p>
      */
+    private static final int TWENTIES_NUMBER_OF_FIBONACCI = 4181;
+    
     public int getFibonacciNumber(int index) {
-        if (index == 0) {
-            return 0;
-        }
-        if (index == 1) {
-            return 1;
-        }
         int n1 = 0;
         int n2 = 1;
         int buffer = 0;
-        List<Integer> fibonacci = new ArrayList<>();
-        fibonacci.add(n1);
-        fibonacci.add(n2);
-        while (buffer <= 4181) {
+        List<Integer> fibonacciSequence = new ArrayList<>();
+        fibonacciSequence.add(n1);
+        fibonacciSequence.add(n2);
+        while (buffer <= TWENTIES_NUMBER_OF_FIBONACCI) {
             buffer = n1 + n2;
             n1 = n2;
             n2 = buffer;
-            fibonacci.add(buffer);
+            fibonacciSequence.add(buffer);
         }
-        return fibonacci.get(index);
+        return fibonacciSequence.get(index);
     }
 }
