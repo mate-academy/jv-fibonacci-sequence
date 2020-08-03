@@ -10,6 +10,17 @@ public class FibonacciSequence {
      * Результат: 21</p>
      */
     public int getFibonacciNumber(int index) {
-        return 0;
+        int numbrer0 = 1;
+        int numbrer1 = 1;
+        int numbrer2 = 0;
+        if (index == 0) {
+            return 0;
+        }
+        for (int i = 3; i <= index; i++) {
+            numbrer2 = numbrer0 + numbrer1;
+            numbrer0 = numbrer1;
+            numbrer1 = numbrer2;
+        }
+        return numbrer1;
     }
 }
