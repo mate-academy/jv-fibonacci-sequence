@@ -10,7 +10,6 @@ public class FibonacciSequence {
      * Результат: 21</p>
      */
     public int getFibonacciNumber(int index) {
-        int result = 0;
         return index > 1 ? getFibonacciNumber(index - 1)
                 + getFibonacciNumber(index - 2)
                 : index == 1 ? 1 : 0;
