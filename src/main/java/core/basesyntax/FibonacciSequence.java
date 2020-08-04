@@ -16,9 +16,6 @@ public class FibonacciSequence {
         if (index == 1 || index == -1) {
             return 1;
         }
-        if (index < 0) {
-            return getFibonacciNumber(index + 2) + getFibonacciNumber(index + 1);
-        }
         return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
     }
 }
