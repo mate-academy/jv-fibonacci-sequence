@@ -20,4 +20,3 @@ public class FibonacciSequence {
         return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
     }
 }
-
