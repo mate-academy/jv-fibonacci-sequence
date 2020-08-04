@@ -19,11 +19,6 @@ public class FibonacciSequence {
             return 1;
         }
 
-        int result = 1;
-
-        for (int i = 3; i <= index; i++) {
-            result = getFibonacciNumber(i - 1) + getFibonacciNumber(i - 2);
-        }
-        return result;
+        return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
     }
 }
